@@ -37,7 +37,7 @@ public class UserController {
 
     @GetMapping("/user/register")
     public String getRegisterView() {
-        return "shop/register.html";
+        return "shop/registerOld.html";
     }
 
     @PostMapping("/user/register")
