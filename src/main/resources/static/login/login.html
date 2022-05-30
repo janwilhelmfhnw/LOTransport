@@ -53,7 +53,7 @@
         $("#form").submit(function (event) {
             login($('input[name=email]').val(), $('input[name=password]').val(), $('input[name=remember]').is(":checked"), function (result) {
                 if(result) {
-                    window.location.replace("../shop");
+                    window.location.replace("/shop");
                 }
                 else {
                     $("#error-modal").modal('show');
