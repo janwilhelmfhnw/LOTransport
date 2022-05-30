@@ -20,14 +20,24 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
+    @GetMapping
+    public String getShopView(){
+        return "shop/shop.html";
+    }
+
+    @GetMapping("/home")
+    public String getHomeView() {
+        return "login/home.html";
+    }
+
     @GetMapping("/login")
     public String getLoginView() {
-        return "user/login.html";
+        return "login/login.html";
     }
 
     @GetMapping("/user/register")
     public String getRegisterView() {
-        return "register.html";
+        return "shop/register.html";
     }
 
     @PostMapping("/user/register")
@@ -42,7 +52,7 @@ public class UserController {
 
     @GetMapping("/profile/edit")
     public String getProfileView() {
-        return "../user/profile.html";
+        return "../shop/settings.html";
     }
 
     @GetMapping("/profile")
