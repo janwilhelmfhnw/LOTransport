@@ -26,6 +26,18 @@ public class Agent {
 	private String email;
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only create object property from JSON
 	private String password;
+
+	private String street;
+
+
+	private String snumber;
+
+
+	private String postal;
+
+
+	private String city;
+
 	@JsonIgnore
 	private String role = "USER";
 	@Transient // will not be stored in DB
@@ -57,6 +69,40 @@ public class Agent {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getSnumber() {
+		return snumber;
+	}
+
+	public void setSnumber(String snumber) {
+		this.snumber = snumber;
+	}
+
+	public String getPostal() {
+		return postal;
+	}
+
+	public void setPostal(String postal) {
+		this.postal = postal;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
 
 	public String getPassword() {
 		String transientPassword = this.password;
