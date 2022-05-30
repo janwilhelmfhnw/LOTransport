@@ -59,11 +59,11 @@ function register(name, email, password, callbackSuccess, callbackError) {
     });
 }
 
-function getProfile(callback) {
+function getSettings(callback) {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: serviceEndpointURL + "/profile",
+        url: serviceEndpointURL + "/settings",
         success: function (data) {
             callback(data);
         },
@@ -73,18 +73,22 @@ function getProfile(callback) {
     });
 }
 
-function putProfile(name, email, password, callbackSuccess, callbackError) {
+function putSettings(name, email, password, street, snumber, postal, city, callbackSuccess, callbackError) {
     $.ajax({
         type: "PUT",
         contentType: "application/json",
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/profile",
+        url: serviceEndpointURL + "/settings",
         data: JSON.stringify({
             "name": name,
             "email": email,
-            "password": password
+            "password": password,
+            "street": street,
+            "snumber": snumber,
+            "postal": postal,
+            "city": city
         }),
         success: function () {
             callbackSuccess(true);

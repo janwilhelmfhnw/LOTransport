@@ -50,18 +50,18 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/profile/edit")
-    public String getProfileView() {
+    @GetMapping("/settings/edit")
+    public String getSettingsView() {
         return "../shop/settings.html";
     }
 
-    @GetMapping("/profile")
-    public @ResponseBody Agent getProfile() {
+    @GetMapping("/settings")
+    public @ResponseBody Agent getSettings() {
         return agentService.getCurrentAgent();
     }
 
-    @PutMapping("/profile")
-    public ResponseEntity<Void> putProfile(@RequestBody Agent agent) {
+    @PutMapping("/settings")
+    public ResponseEntity<Void> putSettings(@RequestBody Agent agent) {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
             agentService.saveAgent(agent);

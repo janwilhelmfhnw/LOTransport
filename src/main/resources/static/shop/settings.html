@@ -110,7 +110,7 @@
 </script>
 <script>
     $(document).ready(function () {
-        getProfile(function (result) {
+        getSettings(function (result) {
             $('input[name=name]').val(result["name"]);
             $('input[name=email]').val(result["email"]);
             $('input[name=street]').val(result["street"]);
@@ -120,9 +120,9 @@
         });
 
         $("#form").submit(function (event) {
-            putProfile($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(),
+            putSettings($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(),
                 $('input[name=street]').val(), $('input[name=snumber]').val(), $('input[name=postal]').val(), $('input[name=city]').val(),function (result) {
-                    //      window.location.replace("/");
+                    window.location.replace("/settings");
                 }, function (error) {
                     $("#error-modal").modal('show');
                     $("#error-text").text(error);
