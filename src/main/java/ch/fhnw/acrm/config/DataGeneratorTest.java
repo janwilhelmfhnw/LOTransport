@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Profile;
 
 import javax.annotation.PostConstruct;
 
-@Profile("test")
 @Configuration
 public class DataGeneratorTest {
 
@@ -22,8 +21,8 @@ public class DataGeneratorTest {
 
     private void demoUser() throws Exception {
         Agent agentUser = new Agent();
-        agentUser.setEmail("user@user.com");
-        agentUser.setPassword("password");
+        agentUser.setEmail("user@u");
+        agentUser.setPassword("pas");
         agentUser.setName("user");
         agentService.saveAgent(agentUser);
     }

@@ -46,7 +46,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .requireCsrfProtectionMatcher(new CSRFRequestMatcher())
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()).and()
             .authorizeRequests()
-                .antMatchers("/", "/home", "/assets/**", "/user/**", "/login/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-resources/**").permitAll()
+                .antMatchers("/", "/home", "/assets/**", "/user/**", "/register", "/login/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-resources/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/logout").permitAll()
                 .antMatchers("/profile/edit").hasRole("USER")
                 .anyRequest().authenticated()
