@@ -65,4 +65,12 @@ public class Products {
                 ", palletSize=" + palletSize +
                 '}';
     }
+
+    //Product calc
+
+    public static void calcPrice(int id, double palletSize, double price){
+        Double Prod  = Product.;
+
+        return String;
+    }
 }
