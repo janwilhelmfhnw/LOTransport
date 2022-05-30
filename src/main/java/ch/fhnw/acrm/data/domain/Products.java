@@ -68,9 +68,11 @@ public class Products {
 
     //Product calc
 
-    public static void calcPrice(int id, double palletSize, double price){
-        //Double Prod  = Product.;
-
-        return ;
-    }
+//    public static void calcPrice(int id, double palletSize, double price){
+//        //Double Prod  = Product.;
+//        calcPrice(1,12,223);
+//
+//
+//        return calcPrice(1,2,3);
+//    }
 }
