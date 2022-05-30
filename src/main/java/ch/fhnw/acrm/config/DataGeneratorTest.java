@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Profile;
 
 import javax.annotation.PostConstruct;
 
+@Profile("test")
 @Configuration
 public class DataGeneratorTest {
 
