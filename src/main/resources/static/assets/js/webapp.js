@@ -73,7 +73,7 @@ function getProfile(callback) {
     });
 }
 
-function putProfile(name, email, password, street, snumber, callbackSuccess, callbackError) {
+function putProfile(name, email, password, street, snumber, postal, city, callbackSuccess, callbackError) {
     $.ajax({
         type: "PUT",
         contentType: "application/json",
@@ -87,6 +87,8 @@ function putProfile(name, email, password, street, snumber, callbackSuccess, cal
             "password": password,
             "street": street,
             "snumber": snumber,
+            "postal": postal,
+            "city": city,
         }),
         success: function () {
             callbackSuccess(true);
