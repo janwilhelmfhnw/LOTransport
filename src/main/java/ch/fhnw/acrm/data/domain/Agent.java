@@ -25,7 +25,11 @@ public class Agent {
 	@NotEmpty(message = "Please provide an e-mail.")
 	private String email;
 
-	private String address;
+	private String street;
+
+
+	private String snumber;
+
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only create object property from JSON
 	private String password;
 	@JsonIgnore
@@ -60,12 +64,20 @@ public class Agent {
 		this.email = email;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getSnumber() {
+		return snumber;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setSnumber(String snumber) {
+		this.snumber = snumber;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
 	}
 
 	public String getPassword() {
