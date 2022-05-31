@@ -24,6 +24,8 @@ public class Agent {
 	@Email(message = "Please provide a valid e-mail.")
 	@NotEmpty(message = "Please provide an e-mail.")
 	private String email;
+
+	private String address;
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only create object property from JSON
 	private String password;
 	@JsonIgnore
@@ -56,6 +58,14 @@ public class Agent {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public String getPassword() {
