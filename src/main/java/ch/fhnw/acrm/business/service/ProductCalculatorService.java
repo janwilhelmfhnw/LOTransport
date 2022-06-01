@@ -17,10 +17,13 @@ public class ProductCalculatorService {
 
     double PriceCalc (){
         double costSum = 0;
-        double price = productRepository.findById(int (Long)1);
+        Product product = productRepository.findById(int 1);
+        double price = product.getPrice();
 
         return costSum;
     }
+
+    // get number
 
 
 
@@ -35,9 +38,6 @@ public class ProductCalculatorService {
             priceSum += price;
 
         }
-
-
-
 
         return priceSum;
     }
