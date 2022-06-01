@@ -27,4 +27,14 @@ public class CustomerController {
     public String getCustomerEditView(){
         return "../acrm/customerEdit.html";
     }
+
+//    @GetMapping("/review")
+//    public String getOrderReviewView(){
+//        return "../acrm/orderReview.html";
+//    }
+//
+//    @GetMapping("/review")
+//    public String getPastOrdersView(){
+//        return "../acrm/pastOrders.html";
+//    }
 }

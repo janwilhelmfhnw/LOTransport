@@ -8,6 +8,40 @@
   margin-right: -2px;
 }
 
+
+.btn1 {
+  background-color: #3CB371;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: none;
+  display: inline-block;
+  margin-right: -2px;
+}
+
+.btn1:hover,
+.btn1:focus {
+  background-color: #66CDAA;
+}
+
+
 .page-header {
   padding-bottom: 9.5px;
   margin: 42px 0 21px;
@@ -27,6 +61,10 @@ h3, .h3 {
   font-size: 26px;
 }
 
+.a1 {
+  font-size: 20px;
+}
+
 .already {
   display: block;
   text-align: center;
@@ -36,3 +74,47 @@ h3, .h3 {
   text-decoration: none;
 }
 
+
+.subtitle-link {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: ;
+}
+
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+
+.Rtable-cell {
+  opacity: 0.8;
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid @bw white;
+  background: #66CDAA;}
+
+> h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
+
+
+
+.Rtable--2cols > .Rtable-cell  { width: 50%; }
+.Rtable--3cols > .Rtable-cell  { width: 33.33%; }
+.Rtable--4cols > .Rtable-cell  { width: 25%; }
+.Rtable--5cols > .Rtable-cell  { width: 20%; }
+.Rtable--6cols > .Rtable-cell  { width: 16.6%; }
+
+body {
+  background-image: url("../../user/src/main/resources/static/images/logo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}

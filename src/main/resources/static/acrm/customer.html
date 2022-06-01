@@ -20,13 +20,13 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <img height="150" src="../../user/src/main/resources/static/images/logo.png" alt="logo" >
     <!--   <a href="/shop/dashboard.html">Dashboard</a> -->
-    <a href="/customer.html">Shop</a>
+    <a href="/customer">Shop</a>
     <a href="/settings/edit">Settings</a>
     <a href="/logout">Log Out</a>
 </div>
 <div ><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> </div>
 <div class="container">
-    <div style = "margin-top: 160px" class="page-header"><h2>Shop</h2>
+    <div style = "margin-top: 160px; text-align: center" class="page-header"><h2>Shop</h2></div>
         <div class="Rtable Rtable--5cols">
 
             <div class="Rtable-cell" ><h3>Picture</h3></div>
@@ -67,16 +67,15 @@
         </div>
         <label for="ShippingAddress">Your Shipping Address:</label>
         <select name="Shipping Address" id="ShippingAddress">
-            <option value="volvo">Add Shipping Address</option>
-            <option value="saab">test1</option>
-            <option value="opel">test2</option>
+            <option value="default">Add Shipping Address</option>
+            <option value="Address">test1</option>
         </select>
         <div class='button'>
             <button onclick="test()">Calculate</button>
         </div>
         <div class='answer'>
             <p id='display'></p>
-            <button onclick="window.location.href ='/OrderReview.html';" style="margin: 5px" class="btn btn-primary d-block w-50 " >Order</button>
+            <button onclick="window.location.href ='customer/review';" style="margin: 5px" class="btn btn-primary d-block w-50 " >Order</button>
         </div>
     </div>
 </div>
