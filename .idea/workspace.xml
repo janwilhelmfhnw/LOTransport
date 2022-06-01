@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae4dfa5e-1019-42c3-9303-9eff56b7cbf3" name="Changes" comment="update by T">
+    <list default="true" id="ae4dfa5e-1019-42c3-9303-9eff56b7cbf3" name="Changes" comment="update logo by T">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/acrm/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/acrm/customer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/fhnw/acrm/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/fhnw/acrm/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/fhnw/acrm/data/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/fhnw/acrm/data/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/acrm/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/acrm/customer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653910394799</updated>
       <workItem from="1653910405229" duration="2773000" />
-      <workItem from="1654071115991" duration="8637000" />
+      <workItem from="1654071115991" duration="9340000" />
     </task>
     <task id="LOCAL-00001" summary="import pictures, corrected img src">
       <created>1654086871221</created>
@@ -126,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654088020115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update logo by T">
+      <created>1654091656292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654091656292</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update logo by T">
+      <created>1654091950241</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654091950241</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +194,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="import pictures, corrected img src" />
     <MESSAGE value="update by T" />
-    <option name="LAST_COMMIT_MESSAGE" value="update by T" />
+    <MESSAGE value="update logo by T" />
+    <option name="LAST_COMMIT_MESSAGE" value="update logo by T" />
   </component>
 </project>
