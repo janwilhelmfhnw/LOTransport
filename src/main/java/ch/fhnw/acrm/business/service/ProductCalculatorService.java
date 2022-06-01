@@ -15,17 +15,24 @@ public class ProductCalculatorService {
     //Get db data
     @Autowired
 
-    private ProductRepository productRepository;
+    private static ProductRepository productRepository;
 
     //Product findBy
-    double PriceCalc (){
+    static double PriceCalc (){
         double costSum = 0;
-        //Long id = 1L;
-       //Long id = 1L;
-        Product product = productRepository.findById(1L).get();
-        //Product product = productRepository.findById(Long id);
-        costSum = product.getPrice();
-        //costSum = price;
+
+        try {
+            Product product = productRepository.findById(2L).get();
+
+            costSum = product.getPrice();
+
+
+
+        }
+        catch (Exception e) {
+            e.getStackTrace();
+        }
+
         return costSum;
     }
 
@@ -48,6 +55,7 @@ public class ProductCalculatorService {
         return priceSum;
     }
 
-
-
+    public static void main(String[] args) {
+        System.out.println(PriceCalc());
+    }
 }

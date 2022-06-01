@@ -13,6 +13,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     //List<Product> findById(Long ids);
 
     //@Query ("FROM Product WHERE id = ?1")
-    List<Product> findProductById(Long id);
+    List<Product> findProductById(long id);
            // (double price);
 }

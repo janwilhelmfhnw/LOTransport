@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Product {
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
     private String name;
     private double price;
     private double palletSize;
