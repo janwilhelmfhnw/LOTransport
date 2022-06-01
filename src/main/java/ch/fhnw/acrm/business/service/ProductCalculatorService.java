@@ -17,8 +17,8 @@ public class ProductCalculatorService {
 
     double PriceCalc (){
         double costSum = 0;
-        Product product = productRepository.findById(int 1);
-        double price = product.getPrice();
+        Product product = productRepository.findById(Long id);
+        //double price = product.getPrice();
 
         return costSum;
     }
@@ -28,7 +28,7 @@ public class ProductCalculatorService {
 
 
     // List approach
-    double PriceCalculation (List<Product> pList,) {
+    double PriceCalculation (List<Product> pList) {
 
         double priceSum = 0;
 

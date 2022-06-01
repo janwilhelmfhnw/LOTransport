@@ -8,8 +8,9 @@ import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    List<Product> findByPrice(double price);
-
+    //Product product findById(Long id);
+    //List<Product> findByPrice(double price);
+    //List<Product> findById(Long ids);
 
     @Query ("FROM Product WHERE id = ?1")
     List<Product> findPrice(double price);
