@@ -7,11 +7,12 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
-
+   // public Optional<Product> findById(Long id);
     //Product product findById(Long id);
     //List<Product> findByPrice(double price);
     //List<Product> findById(Long ids);
 
-    @Query ("FROM Product WHERE id = ?1")
-    List<Product> findPrice(double price);
+    //@Query ("FROM Product WHERE id = ?1")
+    List<Product> findProductById(Long id);
+           // (double price);
 }
