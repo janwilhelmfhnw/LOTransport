@@ -28,13 +28,11 @@ public class CustomerController {
         return "../acrm/customerEdit.html";
     }
 
-//    @GetMapping("/review")
-//    public String getOrderReviewView(){
-//        return "../acrm/orderReview.html";
-//    }
-//
-//    @GetMapping("/review")
-//    public String getPastOrdersView(){
-//        return "../acrm/pastOrders.html";
-//    }
+    @GetMapping("/review")
+    public String getOrderReviewView(){
+        return "../acrm/orderReview.html";}
+
+    @GetMapping("/orders")
+    public String getPastOrdersView(){
+        return "../acrm/pastOrders.html";}
 }
