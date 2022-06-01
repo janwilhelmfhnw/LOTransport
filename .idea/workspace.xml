@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae4dfa5e-1019-42c3-9303-9eff56b7cbf3" name="Changes" comment="import pictures, corrected img src">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/acrm/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/acrm/customer.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29smua8rLWY29qqaUwP6YH1X9sJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tijan/IdeaProjects/LOTransport/src/main/resources/static/images",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "25ba6dd3c9141e89131b9e8300ccac08"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\static\images" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\images" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\images" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\static" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\images" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\static" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\src\main\resources\static\user" />
+      <recent name="C:\Users\tijan\IdeaProjects\LOTransport\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ACRMWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="acrm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ch.fhnw.acrm.ACRMWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae4dfa5e-1019-42c3-9303-9eff56b7cbf3" name="Changes" comment="" />
+      <created>1653910394799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653910394799</updated>
+      <workItem from="1653910405229" duration="2773000" />
+      <workItem from="1654071115991" duration="7214000" />
+    </task>
+    <task id="LOCAL-00001" summary="import pictures, corrected img src">
+      <created>1654086871221</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654086871221</updated>
+    </task>
+    <task id="LOCAL-00002" summary="import pictures, corrected img src">
+      <created>1654087554109</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654087554109</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="c7d651b4-9f7d-4acb-8dd3-76ca36f718e5">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c7d651b4-9f7d-4acb-8dd3-76ca36f718e5" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="import pictures, corrected img src" />
+    <option name="LAST_COMMIT_MESSAGE" value="import pictures, corrected img src" />
+  </component>
+</project>
