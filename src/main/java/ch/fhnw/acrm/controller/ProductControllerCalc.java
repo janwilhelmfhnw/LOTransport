@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/product")
-public class ProductController {
+@RequestMapping("/productCalc")
+public class ProductControllerCalc {
 
     private final ProductRepository productRepository;
 
-    public ProductController(ProductRepository productRepository) {
+    public ProductControllerCalc(ProductRepository productRepository) {
         this.productRepository = productRepository;
     }
 
     @GetMapping
-    public ResponseEntity getAllProducts() {
+    public ResponseEntity getpRODUCTbYiD() {
         return ResponseEntity.ok(this.productRepository.findAll());
 
     }
