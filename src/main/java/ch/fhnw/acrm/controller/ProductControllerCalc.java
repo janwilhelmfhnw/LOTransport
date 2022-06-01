@@ -18,7 +18,7 @@ public class ProductControllerCalc {
     }
 
     @GetMapping
-    public ResponseEntity getpRODUCTbYiD() {
+    public ResponseEntity getProductById() {
         return ResponseEntity.ok(this.productRepository.findAll());
 
     }
