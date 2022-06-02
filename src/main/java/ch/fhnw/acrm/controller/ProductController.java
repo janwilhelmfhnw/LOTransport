@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/product")
+//@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
     private ProductService productService;
 
-    @GetMapping("productOrder")
-    public String getProductView(){return "acrm/productOrder.html";}
+    @GetMapping("/productOrder")
+    public String getProductView(){return "user/productOrder.html";}
 
     private final ProductRepository productRepository;
 
@@ -35,9 +35,6 @@ public class ProductController {
 //
 //    }
 
-    @GetMapping("/order")
-    public @ResponseBody Product getProfile() {
-        return productService.getCurrentProduct();
-    }
+
 
 }
