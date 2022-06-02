@@ -97,7 +97,7 @@
 <script>
     $(document).ready(function () {
         getAddress(function (result) {
-            $('input[name=address]').val(result["address"]);
+            $('option[name=address]').val(result["address"]);
         });
     });
 </script>
