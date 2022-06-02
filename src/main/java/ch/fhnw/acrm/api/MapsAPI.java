@@ -3,9 +3,14 @@ package ch.fhnw.acrm.api;
 /*
 import java.net.URI;
 import java.net.http.*;
+
+import org.apache.tomcat.util.json.JSONParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
+import org.springframework.boot.configurationprocessor.json.JSONObject;
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.net.http.HttpResponse;

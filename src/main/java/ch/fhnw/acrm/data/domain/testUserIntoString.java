@@ -36,7 +36,7 @@ public class testUserIntoString {
                 postalcode = result.getString(7);
                  city = result.getString(6);
             }
-            System.out.println("Location: " +streetname + streetnumber + ", " +postalcode +city);
+            System.out.println("Location: " +streetname + streetnumber + ", " +postalcode +city); //direct location from database
 
             String address = "";
 
@@ -51,7 +51,7 @@ public class testUserIntoString {
                 address += sList.get(x);
 
             }
-            System.out.println(address);
+            System.out.println(address); //string output
 
         }
 
