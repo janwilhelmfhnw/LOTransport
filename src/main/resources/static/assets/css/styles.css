@@ -84,6 +84,7 @@ h3, .h3 {
 }
 
 .Rtable {
+  border: outset;
   display: flex;
   flex-wrap: wrap;
   margin: 0 0 3em 0;
@@ -117,7 +118,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  background-size: 35%;
+  background-size: 34%;
 
 }
 
