@@ -39,10 +39,10 @@ public class ProductController {
     return productService.getProduct();
 }
 
-    @GetMapping
-    public String getCurrentAddress(){
-        return agentService.getAgentAddress("this", "this");
-    }
+//    @GetMapping
+//    public List<Product> getCurrentAddress(){
+//        return List.agentService.getAgentAddress("this", "this");
+//    }
 
 
 @PostMapping
