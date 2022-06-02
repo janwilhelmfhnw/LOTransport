@@ -10,9 +10,7 @@ import ch.fhnw.acrm.data.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -40,8 +38,8 @@ public class ProductController {
     public List<Product> getProduct(){
     return productService.getProduct();
 }
-
-public void registerNewProduct(Product product) {
+@PostMapping
+public void registerNewProduct(@RequestBody Product product) {
     productService.addNewProduct(product);
 }
 

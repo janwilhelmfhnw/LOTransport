@@ -23,5 +23,6 @@ public class ProductService {
 
 
     public void addNewProduct(Product product) {
+        System.out.println(product);
     }
 }
