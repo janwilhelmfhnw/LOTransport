@@ -2,6 +2,7 @@ package ch.fhnw.acrm.controller;
 
 
 import ch.fhnw.acrm.data.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/productCalc")
 public class ProductControllerCalc {
 
+    @Autowired
     private final ProductRepository productRepository;
 
     public ProductControllerCalc(ProductRepository productRepository) {
@@ -18,7 +20,7 @@ public class ProductControllerCalc {
     }
 
     @GetMapping
-    public ResponseEntity getpRODUCTbYiD() {
+    public ResponseEntity get() {
         return ResponseEntity.ok(this.productRepository.findAll());
 
     }

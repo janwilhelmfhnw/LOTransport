@@ -1,14 +1,22 @@
 package ch.fhnw.acrm.data.domain;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table
 public class Product {
     @Id
-    @GeneratedValue
+    @SequenceGenerator(
+            name = "product_sequence",
+            sequenceName = "product_sequence",
+            allocationSize = 1
+    )
+@GeneratedValue(
+        strategy = GenerationType.SEQUENCE,
+        generator = "product_sequence"
+)
+
     private Long id;
     private String name;
     private double price;
@@ -51,6 +59,8 @@ public class Product {
     public double getPalletSize() {
         return palletSize;
     }
+
+
 
     public Product() {
     }
