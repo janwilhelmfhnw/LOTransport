@@ -40,21 +40,35 @@ public class AgentService {
         agentRepository.save(agent);
     }
 
-    public static void main(String[] args) {
 
-    }
     public Agent getCurrentAgent() {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return agentRepository.findByEmail(user.getUsername());
     }
-    public String getAgentAddress() {
-        String agent;
-        String agent2;
-            agent =    String.valueOf(getCurrentAgent());
-            agent2 = agentRepository.getById(Long.valueOf(agent)).getStreet();
+    public String getAgentAddress(String a, String b) {
+//        String agent;
+//        String agent2;
+        a =    String.valueOf(getCurrentAgent());
+        b = agentRepository.getById(Long.valueOf(a)).getStreet();
 
-     return agent2;
+        return b;
 
     }
+
+
+
+
+
+
+
+    public static void main(String[] args) {
+
+        String a = Agen
+
+
+
+        System.out.println(String);
+    }
+
 }
 //(AgentRepository.getStreet(agent));
