@@ -1,12 +1,5 @@
 package ch.fhnw.acrm.data.domain;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.sql.SQLException;
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -40,15 +33,15 @@ public class testUserIntoString {
 
             String address = "";
 
-            ArrayList<String> sList = new ArrayList<String>();
-            sList.add(streetname);
-            sList.add(streetnumber+", ");
-            sList.add(postalcode);
-            sList.add(city);
+            ArrayList<String> AddressList = new ArrayList<String>();
+            AddressList.add(streetname);
+            AddressList.add(streetnumber+", ");
+            AddressList.add(postalcode);
+            AddressList.add(city);
 
 
-            for (int x = 0; x < sList.size(); x++) {
-                address += sList.get(x);
+            for (int x = 0; x < AddressList.size(); x++) {
+                address += AddressList.get(x);
 
             }
             System.out.println(address); //string output
