@@ -14,6 +14,12 @@ public class Product {
     private double price;
     private double palletSize;
 
+    public Product(String name, double price, double palletSize) {
+        this.name = name;
+        this.price = price;
+        this.palletSize = palletSize;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
