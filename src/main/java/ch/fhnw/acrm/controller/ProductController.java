@@ -38,6 +38,13 @@ public class ProductController {
     public List<Product> getProduct(){
     return productService.getProduct();
 }
+
+    @GetMapping
+    public String getCurrentAddress(){
+        return agentService.getAgentAddress("this", "this");
+    }
+
+
 @PostMapping
 public void registerNewProduct(@RequestBody Product product) {
     productService.addNewProduct(product);

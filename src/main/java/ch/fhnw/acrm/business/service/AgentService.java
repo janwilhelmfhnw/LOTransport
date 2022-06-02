@@ -45,7 +45,8 @@ public class AgentService {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return agentRepository.findByEmail(user.getUsername());
     }
-    public String getAgentAddress(String a,
+    public String getAgentAddress(
+                                String a,
                                  String b
                                     )
     {
