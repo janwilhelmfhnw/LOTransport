@@ -5,14 +5,14 @@
 
 package ch.fhnw.acrm.business.service;
 
+import ch.fhnw.acrm.data.domain.Agent;
+import ch.fhnw.acrm.data.repository.AgentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-import ch.fhnw.acrm.data.domain.Agent;
-import ch.fhnw.acrm.data.repository.AgentRepository;
 
 import javax.validation.Valid;
 import javax.validation.Validator;

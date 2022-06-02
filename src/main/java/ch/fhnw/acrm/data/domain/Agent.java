@@ -50,6 +50,8 @@ public class Agent {
 
 	private String city;
 
+	private String Address;
+
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only create object property from JSON
 	private String password;
 	@JsonIgnore
