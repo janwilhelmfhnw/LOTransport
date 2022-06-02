@@ -22,4 +22,6 @@ public class ProductService {
     }
 
 
+    public void addNewProduct(Product product) {
+    }
 }

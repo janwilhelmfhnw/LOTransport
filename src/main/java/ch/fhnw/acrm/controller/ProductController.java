@@ -36,8 +36,14 @@ public class ProductController {
 
 
 
+@GetMapping
+    public List<Product> getProduct(){
+    return productService.getProduct();
+}
 
-
+public void registerNewProduct(Product product) {
+    productService.addNewProduct(product);
+}
 
 
 
