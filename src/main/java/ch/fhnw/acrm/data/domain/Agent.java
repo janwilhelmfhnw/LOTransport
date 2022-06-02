@@ -14,7 +14,7 @@ import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 @Entity
-public class Agent {
+public class Agent extends Product{
 
 	@Id
 	@GeneratedValue

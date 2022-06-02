@@ -45,11 +45,17 @@ public class AgentService {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return agentRepository.findByEmail(user.getUsername());
     }
-    public String getAgentAddress(String a, String b) {
-//        String agent;
-//        String agent2;
-        a =    String.valueOf(getCurrentAgent());
-        b = agentRepository.getById(Long.valueOf(a)).getStreet();
+    public String getAgentAddress(String a,
+                                 String b
+                                    )
+    {
+//        this.a = a;
+//        this.b = b;
+        a = String.valueOf(agentRepository.findByName(String.valueOf(getCurrentAgent())));
+       // a =    String.valueOf(agentRepository.(agentRepository.g));
+        //b = String.valueOf(agentRepository.getB)
+       // b = agentRepository.getById(Long.valueOf(a)).getStreet();
+        b = String.valueOf(agentRepository.findByName(a).getStreet());
 
         return b;
 

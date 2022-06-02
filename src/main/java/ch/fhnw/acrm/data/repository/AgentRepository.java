@@ -13,4 +13,5 @@ import org.springframework.stereotype.Repository;
 public interface AgentRepository extends JpaRepository<Agent, Long> {
 	Agent findByEmail(String email);
 	Agent findByEmailAndIdNot(String email, Long agentId);
+	Agent findByName(String name);
 }
