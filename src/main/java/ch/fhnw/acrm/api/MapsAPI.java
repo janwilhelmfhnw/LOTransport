@@ -1,18 +1,10 @@
 package ch.fhnw.acrm.api;
 
-/*
-import java.net.URI;
-import java.net.http.*;
-
-import org.apache.tomcat.util.json.JSONParser;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
-import org.springframework.boot.configurationprocessor.json.JSONArray;
-import org.springframework.boot.configurationprocessor.json.JSONObject;
-
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
@@ -38,6 +30,7 @@ public class MapsAPI {
 
         String response = client.send(request, HttpResponse.BodyHandlers.ofString()).body();
 
+        System.out.println(response);
 
         JSONParser jp = new JSONParser();
         JSONObject jo = (JSONObject) jp.parse(response);
@@ -70,4 +63,4 @@ public class MapsAPI {
 
 }
 
-*/
+

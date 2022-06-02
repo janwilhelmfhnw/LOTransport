@@ -22,5 +22,5 @@ public class ProductControllerCalc {
         return ResponseEntity.ok(this.productRepository.findAll());
 
     }
-
+    
 }
