@@ -20,11 +20,11 @@ public class ProductController {
 
     private final ProductService productService;
 
-//    @Autowired
-//    private AgentRepository agentRepository;
-//
-//    @Autowired
-//    private AgentService agentService;
+    @Autowired
+    private AgentRepository agentRepository;
+
+    @Autowired
+    private AgentService agentService;
 
 @Autowired
     public ProductController(ProductService productService) {
