@@ -4,7 +4,7 @@ package ch.fhnw.acrm.data.domain;
 import javax.persistence.*;
 
 @Entity
-@Table
+//@Table(name="product", schema = "LOTransport")
 public class Product {
     @Id
     @SequenceGenerator(
