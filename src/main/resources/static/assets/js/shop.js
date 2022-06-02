@@ -1,4 +1,6 @@
 function test(){
+  //  var orderReview = [];
+
     const quantity1 = parseInt(document.getElementById('quantity1').value) * 0.7;
     const quantity2 = parseInt(document.getElementById('quantity2').value) * 0.4;
     const quantity3 = parseInt(document.getElementById('quantity3').value) * 0.4;
@@ -13,11 +15,34 @@ function test(){
     sumPrice = price1 + price2 + price3 + price4;
 
 
-    document.getElementById('display').innerHTML = sumQuantity +" and " + sumPrice;
+ //    orderReview.push({pquantity: sumQuantity, pprice: sumPrice,});
+
+
+    document.getElementById('displaySpace').innerHTML = sumQuantity +" Palletspace";
+    document.getElementById('displayPrice').innerHTML = sumPrice +"CHF";
+
+    // document.getElementById("table").deleteRow(0);
+    //
+    // var cols = ['pquantity', 'pprice',];
+    // for (var i = 0; i < orderReview.length; i++) {
+    //     $('table').append('<tr></tr>');
+    //     for (var j = 0; j < cols.length; j++) {
+    //         $('table tr:last-child').append('<td>' + orderReview[i][cols[j]] + '</td>');
+    //     }
+    // }
+
 }
 
 function orderButton(){
+    window.localStorage.setItem('quantityProduct', JSON.stringify(sumQuantity));
+    window.localStorage.setItem('costProduct', JSON.stringify(sumPrice));
+}
 
+function displayOrder(){
+    JSON.parse(window.localStorage.getItem('quantityProduct'));
+    JSON.parse(window.localStorage.getItem('costProduct'));
+    document.getElementById('quantityProduct').innerHTML = JSON.parse(window.localStorage.getItem('quantityProduct')) +" Palletspace";
+    document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) +" Palletspace"; +"CHF";
 }
 
 function getAddress(callback) {

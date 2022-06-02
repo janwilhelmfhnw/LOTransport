@@ -13,17 +13,19 @@
         <h2 class="text-center"><strong>Order Review</strong></h2>
     </div>
     <div class="table-responsive">
-        <table class="table table-borderless">
-            <thead>
+        <table id="orderReview" class="table table-borderless">
             <tr>
-                <th>Products </th>
-                <th>Price Products </th>
-                <th>Space Used </th>
-                <th>Transport Costs </th>
+                <th>Pallet Space</th>
+                <th>Price Products</th>
+                <th>Transport Costs</th>
+                <th>Total</th>
             </tr>
-            </thead>
-            <tbody id="tableData">
-            </tbody>
+            <tr>
+                <th><a id="quantityProduct"></a></th>
+                <th><a id="costProduct"></th>
+                <th>Transport Costs</th>
+                <th>Total</th>
+            </tr>
         </table>
     </div>
     <div class="container" style="display:flex;flex-direction: row;justify-content:center;">
@@ -36,6 +38,16 @@
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/script.js"></script>
 <script src="../assets/js/webapp.js"></script>
+<script src="../assets/js/shop.js"></script>
+<script>
+    $(document).ready(function() {
+        displayOrder()
+    });
+
+
+
+</script>
+
 <!--<script>-->
 <!--    $(document).ready(function () {-->
 <!--        $(loadData());-->
