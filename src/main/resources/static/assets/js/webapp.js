@@ -101,6 +101,37 @@ function putProfile(name, email, password, street, snumber, postal, city, callba
 }
 
 
+// putOrder Test
+function putOrder(orders) {
+    $.ajax({
+        type: "PUT",
+        contentType: "application/json",
+        headers: {
+            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
+        },
+        url: serviceEndpointURL + "/productOrder",
+        data: JSON.stringify({
+
+            "orders": orders,
+            "street": street,
+            "snumber": snumber,
+            "postal": postal,
+
+        }),
+        success: function () {
+            callbackSuccess(true);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+            callbackError(jqXHR.responseJSON.message);
+        }
+    });
+}
+
+
+//putOrder test end
+
+
 function getURLParameter(name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
 }
