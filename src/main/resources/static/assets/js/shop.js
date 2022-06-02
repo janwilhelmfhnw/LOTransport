@@ -34,8 +34,14 @@ function test(){
 }
 
 function orderButton(){
-    window.localStorage.setItem('quantityProduct', JSON.stringify(sumQuantity));
-    window.localStorage.setItem('costProduct', JSON.stringify(sumPrice));
+
+    if (sumQuantity!== null) {
+        window.localStorage.setItem('quantityProduct', JSON.stringify(sumQuantity));
+        window.localStorage.setItem('costProduct', JSON.stringify(sumPrice));
+        window.location.href ='customer/review';
+    } else { var popup = document.getElementById("Popup");
+        popup.classList.toggle("show");
+    }
 }
 
 function displayOrder(){
@@ -43,6 +49,11 @@ function displayOrder(){
     JSON.parse(window.localStorage.getItem('costProduct'));
     document.getElementById('quantityProduct').innerHTML = JSON.parse(window.localStorage.getItem('quantityProduct')) +" Palletspace";
     document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) +" Palletspace"; +"CHF";
+}
+
+function goBack(){
+window.localStorage.removeItem('quantityProduct');
+window.localStorage.removeItem('costProduct');
 }
 
 function getAddress(callback) {
