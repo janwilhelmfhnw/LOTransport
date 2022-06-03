@@ -80,7 +80,41 @@ h3, .h3 {
 }
 
 .container {
-  background-color: ;
+  background-color: #ffffff;
+}
+
+.valid {
+  color: #3cb371;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: " "
+}
+
+.invalid {
+  color: rgba(210, 52, 52, 0.85);
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "x";
+}
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
 }
 
 .Rtable {
