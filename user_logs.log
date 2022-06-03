@@ -22,3 +22,7 @@ Jun 03, 2022 6:46:57 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
 INFO: User: blahas registered an account
 Jun 03, 2022 6:47:02 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
 INFO: User test@testi has logged in
+Jun 03, 2022 9:44:05 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: rewrwhas registered an account
+Jun 03, 2022 9:44:22 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User test@test has logged in
