@@ -44,11 +44,11 @@ public class ProductController {
 //        return List.agentService.getAgentAddress("this", "this");
 //    }
 
-//
-//@PostMapping
-//public void registerNewProduct(@RequestBody Product product) {
-//    productService.addNewProduct(product);
-//}
+
+@PostMapping
+public void registerNewProduct(@RequestBody Product product) {
+    productService.addNewProduct(product);
+}
 
 
 
