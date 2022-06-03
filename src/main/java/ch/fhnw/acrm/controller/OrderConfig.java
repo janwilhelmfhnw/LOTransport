@@ -1,6 +1,8 @@
 package ch.fhnw.acrm.controller;
 
 
+import ch.fhnw.acrm.data.domain.Orders;
+import ch.fhnw.acrm.data.domain.Product;
 import ch.fhnw.acrm.data.repository.OrdersRepository;
 import ch.fhnw.acrm.data.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -22,6 +24,16 @@ public class OrderConfig implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
 
+//        Product bob = new Product("bread",33,44);
+//        Orders exe = new Orders(1,2);
+//        bob.getOrders().add(exe);
+//        exe.getProducts().add(bob);
+//
+//        productRepository.save(bob);
+//        ordersRepository.save(exe);
+
+
+        System.out.println("Hello World");
 
 
 

@@ -34,10 +34,10 @@ public class ProductController {
 
 
 
-@GetMapping
-    public List<Product> getProduct(){
-    return productService.getProduct();
-}
+//@GetMapping
+//    public List<Product> getProduct(){
+//    return productService.getProduct();
+//}
 
 //    @GetMapping
 //    public List<Product> getCurrentAddress(){

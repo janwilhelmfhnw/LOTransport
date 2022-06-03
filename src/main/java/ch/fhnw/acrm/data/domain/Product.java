@@ -83,8 +83,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(Long id, String name, double price, double palletSize) {
-        this.id = id;
+    public Product(String name, double price, double palletSize) {
         this.name = name;
         this.price = price;
         this.palletSize = palletSize;

@@ -30,6 +30,11 @@ public class Orders  {
     public Orders() {
     }
 
+    public Orders(int orderNumber, int orderAmount) {
+        this.orderNumber = orderNumber;
+        this.orderAmount = orderAmount;
+    }
+
     public int getOrderNumber() {
         return orderNumber;
     }
