@@ -38,7 +38,7 @@ public static void AddressString (){
                     postalcode = result.getString(7);
                     city = result.getString(6);
                 }
-                System.out.println("Location: " + streetname + streetnumber + "," + postalcode + city); //direct location from database
+       //         System.out.println("Location: " + streetname + streetnumber + "," + postalcode + city); //direct location from database
 
 
                 ArrayList<String> AddressList = new ArrayList<String>();
@@ -62,9 +62,8 @@ public static void AddressString (){
         }
     }
 
-    public String setAddress() {
-        address = this.address;
-        return null;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public static String getAddress() {

@@ -1,8 +1,9 @@
 package ch.fhnw.acrm.api;
 
-import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -45,8 +46,8 @@ public class MapsAPI {
         System.out.println(response + "\n" + distance + " m");
     }
     public static void setDestination() {
-
         scan = new Scanner(System.in);
+   //     testUserIntoString.setAddress();
         destination = scan.next();
 
     }
