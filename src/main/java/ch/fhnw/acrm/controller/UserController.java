@@ -34,6 +34,11 @@ public class UserController {
         return "register.html";
     }
 
+    @GetMapping("/about")
+    public String getAboutUsView() {
+        return "user/about.html";
+    }
+
     @PostMapping("/user/register")
     public ResponseEntity<Void> postRegister(@RequestBody Agent agent) {
         try {

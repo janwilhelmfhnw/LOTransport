@@ -1,5 +1,6 @@
 package ch.fhnw.acrm.api;
 
+import ch.fhnw.acrm.data.domain.CalculatorMap;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -17,11 +18,11 @@ public class MapsAPI {
     public static float[][] distances;
     public static final String ORIGIN_ADDRESS = "PeterMerian-Strasse86,4052Basel";
     private static Scanner scan;
-
+    private static long distance = 1;
     //download data
     public static void getData(String source, String destination) throws Exception {
 
-        long distance = 1;
+
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -43,8 +44,10 @@ public class MapsAPI {
         JSONObject je = (JSONObject) jo.get("distance");
 
         distance = (long) je.get("value");
+        distance =distance/1000;
+        System.out.println(response + "\n" + distance + " km");
+        CalculatorMap.getCosts();
 
-        System.out.println(response + "\n" + distance + " m");
     }
     public static void setDestination() {
 
@@ -63,7 +66,9 @@ public class MapsAPI {
 
         getData(ORIGIN_ADDRESS, getDestination());
     }
-
+public static long getDistance() {
+        return distance;
+}
 }
 
 
