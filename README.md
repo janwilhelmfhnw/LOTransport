@@ -66,7 +66,7 @@ The User is able to change the following data that is injected into the database
 - City
 
 
-## Teammember
+## Team Members
 - [Philippe Gagneux]
 - [Tijana Dobric]
 - [Kenan Ahmetasevic]
