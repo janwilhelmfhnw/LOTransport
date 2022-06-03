@@ -3,6 +3,8 @@ package ch.fhnw.acrm.data.domain;
 
 import java.sql.*;
 
+//Author: Kenan Ahmetasevic
+
 public class DatabaseConnection {
 
     private static String url = "jdbc:postgresql://ec2-52-30-67-143.eu-west-1.compute.amazonaws.com:5432/db9gl717l6jetr";

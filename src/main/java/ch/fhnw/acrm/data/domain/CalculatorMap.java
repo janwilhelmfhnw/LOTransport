@@ -8,6 +8,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Scanner;
 
+//copied from https://github.com/Nic0Joos/Unchained2
+//in the end not implemented, but takes input from MapsAPI
+
 public class CalculatorMap {
 
 

@@ -1,5 +1,7 @@
 serviceEndpointURL = window.location.protocol + "//" + window.location.host;
 
+<!--Author: Jan Wilhelm-->
+
 function login(email, password, remember, callback) {
     $.ajax({
         type: "POST",

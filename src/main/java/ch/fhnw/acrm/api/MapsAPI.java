@@ -10,6 +10,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
+//Author: Kenan Ahmetasevic
 public class MapsAPI {
 
 

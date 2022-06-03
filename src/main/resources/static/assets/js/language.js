@@ -1,3 +1,5 @@
+<!--Author: Jan Wilhelm-->
+<!--Not Implemented, old settings Page was able to change language based on a button-->
 $('[lang]').hide(); // hide all language input at the start
 $('[lang="en"]').show(); // show default language
 $('#lang-switch').change(function () { //show language based on switch cases

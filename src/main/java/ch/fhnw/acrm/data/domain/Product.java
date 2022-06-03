@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+//Author: Philippe Gagneux
+
 @Entity
 public class Product {
     @Id

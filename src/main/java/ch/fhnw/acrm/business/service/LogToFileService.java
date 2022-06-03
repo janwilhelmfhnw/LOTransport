@@ -10,6 +10,7 @@ import java.util.logging.SimpleFormatter;
 
 /**
  * Copied from https://github.com/MathisHermann/TimBan
+ * changed by Jan Wilhelm
  */
 
 

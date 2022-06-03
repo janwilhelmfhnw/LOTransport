@@ -1,0 +1,4 @@
+Jun 03, 2022 11:10:24 PM ch.fhnw.acrm.business.service.LogToFileService logUser
+INFO: User: test has registered an account
+Jun 03, 2022 11:10:32 PM ch.fhnw.acrm.business.service.LogToFileService logUser
+INFO: User test@test has logged in

@@ -8,7 +8,7 @@ package ch.fhnw.acrm.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
+//Author: Jan Wilhelm
 @Controller
 @RequestMapping(path = "/")
 public class IndexController {
