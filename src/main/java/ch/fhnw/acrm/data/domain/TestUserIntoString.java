@@ -3,7 +3,7 @@ package ch.fhnw.acrm.data.domain;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class testUserIntoString {
+public class TestUserIntoString {
 
     private static String address = "";
 
@@ -67,7 +67,7 @@ public static void AddressString (){
     }
 
     public static String getAddress() {
-       AddressString();
+      AddressString();
         return address;
 
     }

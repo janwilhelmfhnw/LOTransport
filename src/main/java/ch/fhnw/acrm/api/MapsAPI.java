@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class MapsAPI {
 
+
     private static final String API_KEY = "AIzaSyCsceVMrBAdupkGbu0zM9jOOBrz2s5wEwY";
     private static String destination;
     public static float[][] distances;
@@ -46,6 +47,7 @@ public class MapsAPI {
         System.out.println(response + "\n" + distance + " m");
     }
     public static void setDestination() {
+
         scan = new Scanner(System.in);
    //     testUserIntoString.setAddress();
         destination = scan.next();

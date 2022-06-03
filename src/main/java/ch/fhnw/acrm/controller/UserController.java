@@ -6,7 +6,7 @@
 package ch.fhnw.acrm.controller;
 
 import ch.fhnw.acrm.business.service.AgentService;
-import ch.fhnw.acrm.data.domain.testUserIntoString;
+import ch.fhnw.acrm.data.domain.TestUserIntoString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -64,7 +64,7 @@ public class UserController {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
             agentService.saveAgent(agent);
-            testUserIntoString.AddressString();
+            TestUserIntoString.AddressString();
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
