@@ -1,5 +1,7 @@
 package ch.fhnw.acrm.api;
 
+import ch.fhnw.acrm.business.service.AgentService;
+import ch.fhnw.acrm.data.domain.Agent;
 import ch.fhnw.acrm.data.domain.CalculatorMap;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -8,17 +10,15 @@ import org.json.simple.parser.JSONParser;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.Scanner;
 
 public class MapsAPI {
 
 
     private static final String API_KEY = "AIzaSyCsceVMrBAdupkGbu0zM9jOOBrz2s5wEwY";
     private static String destination;
-    public static float[][] distances;
     public static final String ORIGIN_ADDRESS = "PeterMerian-Strasse86,4052Basel";
-    private static Scanner scan;
     private static long distance = 1;
+
     //download data
     public static void getData(String source, String destination) throws Exception {
 
@@ -51,24 +51,27 @@ public class MapsAPI {
     }
     public static void setDestination() {
 
-        scan = new Scanner(System.in);
-   //     testUserIntoString.setAddress();
-        destination = scan.next();
+        Agent a = new AgentService().getCurrentAgent();
+
+        destination = a.toString();
 
     }
     public static String getDestination() {
 
         return destination;
     }
+    public static long getDistance() {
+
+        return distance;
+    }
     public static void main(String[] args) throws Exception {
+
 
         setDestination();
 
         getData(ORIGIN_ADDRESS, getDestination());
     }
-public static long getDistance() {
-        return distance;
-}
+
 }
 
 
