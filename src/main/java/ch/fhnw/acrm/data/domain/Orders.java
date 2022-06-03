@@ -12,36 +12,38 @@ public class Orders {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long orderId;
+    private Long Id;
 
     private double itemAmount1;
     private double itemAmount2;
     private double itemAmount3;
     private double itemAmount4;
     private double ProductCosts;
-    private double TransportCosts;
+    private double palletSpace;
+    private double transportCosts;
     private double Total;
 
 
     public Orders() {
     }
 
-    public Orders(double itemAmount1, double itemAmount2, double itemAmount3, double itemAmount4, double productCosts, double transportCosts, double total) {
+    public Orders(double itemAmount1, double itemAmount2, double itemAmount3, double itemAmount4, double productCosts, double palletSpace, double transportCosts, double total) {
         this.itemAmount1 = itemAmount1;
         this.itemAmount2 = itemAmount2;
         this.itemAmount3 = itemAmount3;
         this.itemAmount4 = itemAmount4;
         ProductCosts = productCosts;
-        TransportCosts = transportCosts;
+        this.palletSpace = palletSpace;
+        this.transportCosts = transportCosts;
         Total = total;
     }
 
-    public Long getOrderId() {
-        return orderId;
+    public Long getId() {
+        return Id;
     }
 
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
+    public void setId(Long id) {
+        Id = id;
     }
 
     public double getItemAmount1() {
@@ -84,12 +86,20 @@ public class Orders {
         ProductCosts = productCosts;
     }
 
+    public double getPalletSpace() {
+        return palletSpace;
+    }
+
+    public void setPalletSpace(double palletSpace) {
+        this.palletSpace = palletSpace;
+    }
+
     public double getTransportCosts() {
-        return TransportCosts;
+        return transportCosts;
     }
 
     public void setTransportCosts(double transportCosts) {
-        TransportCosts = transportCosts;
+        this.transportCosts = transportCosts;
     }
 
     public double getTotal() {
@@ -98,5 +108,20 @@ public class Orders {
 
     public void setTotal(double total) {
         Total = total;
+    }
+
+    @Override
+    public String toString() {
+        return "Orders{" +
+                "Id=" + Id +
+                ", itemAmount1=" + itemAmount1 +
+                ", itemAmount2=" + itemAmount2 +
+                ", itemAmount3=" + itemAmount3 +
+                ", itemAmount4=" + itemAmount4 +
+                ", ProductCosts=" + ProductCosts +
+                ", palletSpace=" + palletSpace +
+                ", transportCosts=" + transportCosts +
+                ", Total=" + Total +
+                '}';
     }
 }
