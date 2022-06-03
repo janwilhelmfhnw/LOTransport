@@ -6,14 +6,14 @@
 package ch.fhnw.acrm.controller;
 
 import ch.fhnw.acrm.business.service.AgentService;
-import ch.fhnw.acrm.data.domain.TestUserIntoString;
+import ch.fhnw.acrm.business.service.LogToPDFService;
+import ch.fhnw.acrm.data.domain.Agent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import ch.fhnw.acrm.data.domain.Agent;
 
 @Controller
 public class UserController {
@@ -38,7 +38,9 @@ public class UserController {
     public ResponseEntity<Void> postRegister(@RequestBody Agent agent) {
         try {
             agentService.saveAgent(agent);
+            LogToPDFService.logUser("User: " + agent.getName() + "has registered an account");
         } catch (Exception e) {
+            LogToPDFService.logSystem("warning", e.toString());
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
         return ResponseEntity.ok().build();
@@ -64,8 +66,10 @@ public class UserController {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
             agentService.saveAgent(agent);
-            TestUserIntoString.AddressString();
+           // TestUserIntoString.AddressString();
+            LogToPDFService.logUser("User " + agent.getName() + " has updated his profile!:" +"\n"+ "Name: "+ agent.getName()+ ", Email: "+ agent.getEmail());
         } catch (Exception e) {
+            LogToPDFService.logUser( agent.getName() + " has not changed his profile.");
             throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
         }
         return ResponseEntity.ok().build();

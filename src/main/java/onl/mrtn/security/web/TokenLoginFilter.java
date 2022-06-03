@@ -5,6 +5,7 @@
 
 package onl.mrtn.security.web;
 
+import ch.fhnw.acrm.business.service.LogToPDFService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import onl.mrtn.security.config.TokenSecurityProperties;
 import onl.mrtn.security.model.TokenUser;
@@ -12,8 +13,6 @@ import onl.mrtn.security.service.TokenService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -22,9 +21,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class TokenLoginFilter extends UsernamePasswordAuthenticationFilter {
     private TokenService tokenService;
@@ -57,6 +54,7 @@ public class TokenLoginFilter extends UsernamePasswordAuthenticationFilter {
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication auth) throws IOException, ServletException {
+        LogToPDFService.logUser("User " + user.getUsername() + " has logged in");
         Date date = null;
         Cookie cookie = null;
 

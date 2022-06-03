@@ -1,0 +1,8 @@
+Jun 03, 2022 2:37:15 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: Janhas registered an account
+Jun 03, 2022 2:38:52 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: testuserhas registered an account
+Jun 03, 2022 2:39:38 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: testhas registered an account
+Jun 03, 2022 2:40:17 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User test has updated his profile!
