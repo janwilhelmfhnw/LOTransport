@@ -19,7 +19,7 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <img height="150" src="assets/images/logo.png" alt="logo" >
-    <a href="/orders">Past Order</a>
+    <a href="customer/orders">Past Order</a>
     <a href="/customer">Shop</a>
     <a href="/settings/edit">Settings</a>
     <a href="/logout">Log Out</a>
@@ -74,14 +74,14 @@
                 </tr>
             </table>
         </div>
-    <form id="form" method="post">
-    <h1>Your Shipping Address</h1>
-        <input type="text" name="street" disabled>
+    <form id="form" style=";white-space: nowrap" method="post">
+    <a style="display: inline; margin-right: 30px">Your Shipping Address</a>
+        <input  style="display: inline; width:50%" type="text" name="street" placeholder="Add One in the Settings Page!" disabled>
     </form>
 <!--        <div class='button'>-->
 <!--            <button onclick="test()">Calculate</button>-->
 <!--        </div>-->
-        <div class='answer'>
+        <div style="margin-top: 50px" class='answer'>
             <button onclick="orderButton()" style="margin: 5px" class="btn1 d-block w-50 " >Order</button>
 
         </div>

@@ -40,8 +40,9 @@ function orderButton(){
         window.localStorage.setItem('costProduct', JSON.stringify(sumPrice));
         window.location.href ='customer/review';
 
-    } else { var popup = document.getElementById("Popup");
-        popup.classList.toggle("show");
+    } else { //function myFunction() {
+        alert("I am an alert box!");
+
     }
 }
 
@@ -56,6 +57,12 @@ function goBack(){
 window.localStorage.removeItem('quantityProduct');
 window.localStorage.removeItem('costProduct');
 }
+
+ function order(){
+     setTimeout(function(){
+    },5000);
+     window.location.href ='/orders';
+ }
 
 function getAddress(callback) {
     $.ajax({
