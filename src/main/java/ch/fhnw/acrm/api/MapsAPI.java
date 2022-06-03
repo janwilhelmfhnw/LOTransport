@@ -19,13 +19,13 @@ public class MapsAPI {
     private static Scanner scan;
 
     //download data
-    public static void getData(String source, String destination) throws Exception {
+    public static long getData(String destination) throws Exception {
 
         long distance = 1;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(java.net.URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + source + "&destinations=" + destination + "&key=" + API_KEY))
+                .uri(java.net.URI.create("https://maps.googleapis.com/maps/api/distancematrix/json?origins=" + ORIGIN_ADDRESS + "&destinations=" + destination + "&key=" + API_KEY))
                 .build();
         client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body);
@@ -44,7 +44,8 @@ public class MapsAPI {
 
         distance = (long) je.get("value");
 
-        System.out.println(response + "\n" + distance + " m");
+        return distance;
+
     }
     public static void setDestination() {
 
@@ -61,7 +62,7 @@ public class MapsAPI {
 
         setDestination();
 
-        getData(ORIGIN_ADDRESS, getDestination());
+        getData(getDestination());
     }
 
 }

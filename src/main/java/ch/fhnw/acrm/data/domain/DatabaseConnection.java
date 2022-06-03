@@ -60,7 +60,6 @@ public class DatabaseConnection {
                     snumber = result.getString(3);
                     street = result.getString(4);
 
-
                 }
             }
             apiAddress = street + snumber + "," + postal + city;
