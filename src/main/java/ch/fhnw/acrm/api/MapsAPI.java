@@ -1,6 +1,9 @@
 package ch.fhnw.acrm.api;
 
+import ch.fhnw.acrm.business.service.AgentService;
+import ch.fhnw.acrm.data.domain.Agent;
 import ch.fhnw.acrm.data.domain.CalculatorMap;
+import ch.fhnw.acrm.data.repository.AgentRepository;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -49,11 +52,24 @@ public class MapsAPI {
         CalculatorMap.getCosts();
 
     }
-    public static void setDestination() {
 
-        scan = new Scanner(System.in);
-   //     testUserIntoString.setAddress();
-        destination = scan.next();
+    AgentRepository agentRepository;
+    AgentService agentService;
+
+    public MapsAPI(AgentRepository agentRepository, AgentService agentService) {
+        this.agentRepository = agentRepository;
+        this.agentService = agentService;
+    }
+
+
+    public static void setDestination() {
+        Agent agent = new Agent();
+
+//        scan = new Scanner(System.in);
+//   //     testUserIntoString.setAddress();
+//        destination = scan.next();
+
+
 
     }
     public static String getDestination() {
@@ -61,6 +77,7 @@ public class MapsAPI {
         return destination;
     }
     public static void main(String[] args) throws Exception {
+
 
         setDestination();
 
