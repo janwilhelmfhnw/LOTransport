@@ -7,9 +7,11 @@ This is the FHNW IT-Product by Group LostOnes. IT is a WebApp running with sprin
 - [Installation Guide](#installation-guide)
   - [local IntelliJ Installation](#local-intellij-installation)
   - [Online](#online)
-- [Navigation](#navigation)
-- [Shop-Page](#shop-page)
-- [Settings-Page](#settings-page)
+- [User-Guide](#user-guide)
+  - [Shop-Page](#shop-page)
+  - [Settings-Page](#settings-page)
+- [Teammember](#teammember)
+- [License](#License)
  
 
 ## Installation Guide
@@ -30,7 +32,7 @@ We recommend to run the project online.
 
 open *https://lo-transport.herokuapp.com/*  to access the project on your prefered browser.
 
-## Navigation
+## User-Guide
 
 1. A fresh user is greeted with our HomeScreen and is asked to Login to access the website.
 2. Since a fresh user has not an account, pressing the register button is the way to go.
@@ -45,12 +47,13 @@ open *https://lo-transport.herokuapp.com/*  to access the project on your prefer
 
 ![](images/home.png)
 
-## Shop-Page
+
+### Shop-Page
 
 The User is able to choose from 4 different Products. Changing the amount of the product show the current price and the palletspace it would use.
 The order button sends the user to the connected "order review" site to look at the selection again. This Button is blocked if the user does not choose any products. If the user proceeds with the order, he is sent to the "past order" page.
 
-## Settings-Page
+### Settings-Page
 
 The User is able to change the following data that is injected into the database. Depending on a local or Heraku-Deployment, the data is saved for the next visit.
 - Name
@@ -62,12 +65,13 @@ The User is able to change the following data that is injected into the database
 - City
 
 
-### Teammember
+## Teammember
 - [Philippe Gagneux]
 - [Tijana Dobric]
 - [Kenan Ahmetasevic]
 - [Jan Wilhelm]
 
-#### License
+### License
 [![License](https://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 - [Apache License, Version 2.0](blob/master/LICENSE)
+- ![](images/logo.png)
