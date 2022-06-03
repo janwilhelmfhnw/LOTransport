@@ -115,7 +115,7 @@
 <script src="../assets/js/shop.js"></script>
 <script>
     $(document).ready(function () {
-        getAddress(function (result) {
+        getProfile(function (result) {
             $('option[name=street]').val(result["street"]);
         });
     });
