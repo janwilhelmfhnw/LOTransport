@@ -5,11 +5,9 @@
 
 package ch.fhnw.acrm.controller;
 
-import ch.fhnw.acrm.data.domain.testUserIntoString;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path = "/customer")
@@ -38,8 +36,5 @@ public class CustomerController {
     public String getPastOrdersView(){
         return "../acrm/pastOrders.html";}
 
-    @GetMapping("/customer")
-    public @ResponseBody String getAddress() {
-        return testUserIntoString.getAddress();
-    }
+
 }
