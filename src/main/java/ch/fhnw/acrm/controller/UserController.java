@@ -54,6 +54,11 @@ public class UserController {
         return agentService.getCurrentAgent();
     }
 
+    @GetMapping("/customer")
+    public @ResponseBody Agent getAddress() {
+        return agentService.getCurrentAgent();
+    }
+
     @PutMapping("/settings")
     public ResponseEntity<Void> putProfile(@RequestBody Agent agent) {
         try {
@@ -70,4 +75,6 @@ public class UserController {
     public ResponseEntity<Void> init() {
         return ResponseEntity.ok().build();
     }
+
+
 }
