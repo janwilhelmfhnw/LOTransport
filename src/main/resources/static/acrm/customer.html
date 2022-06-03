@@ -75,12 +75,8 @@
             </table>
         </div>
     <form id="form" method="post">
-        <label for="ShippingAddress">Your Shipping Address:</label>
-        <select name="Shipping Address" id="ShippingAddress" >
-            <option value="default">Add Shipping Address</option>
-            <option name="street" value="Street"></option>
-        </select>
-        <div class="form-group mb-3"><button class="btn1 d-block w-100" type="submit">Update</button></div>
+    <h1>Your Shipping Address</h1>
+        <input type="text" name="street" disabled>
     </form>
 <!--        <div class='button'>-->
 <!--            <button onclick="test()">Calculate</button>-->
@@ -120,11 +116,11 @@
     $(document).ready(function () {
         getProfile(function (result) {
 
-            $('option[name=street]').val(result["street"]);
+            $('input[name=street]').val(result["street"]);
         });
 
         $("#form").submit(function (event) {
-            putProfile($('option[name=street]').val(),function (result) {
+            putProfile($('input[name=street]').val(),function (result) {
                 window.location.replace("../");
             }, function (error) {
                 $("#error-modal").modal('show');

@@ -39,6 +39,9 @@ function orderButton(){
         window.localStorage.setItem('quantityProduct', JSON.stringify(sumQuantity));
         window.localStorage.setItem('costProduct', JSON.stringify(sumPrice));
         window.location.href ='customer/review';
+    } else if () { var popup = document.getElementById("Popup");
+        popup.classList.toggle("show");
+    }
     } else { var popup = document.getElementById("Popup");
         popup.classList.toggle("show");
     }
