@@ -5,7 +5,7 @@
 
 package onl.mrtn.security.web;
 
-import ch.fhnw.acrm.business.service.LogToPDFService;
+import ch.fhnw.acrm.business.service.LogToFileService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import onl.mrtn.security.config.TokenSecurityProperties;
 import onl.mrtn.security.model.TokenUser;
@@ -54,7 +54,7 @@ public class TokenLoginFilter extends UsernamePasswordAuthenticationFilter {
                                             HttpServletResponse response,
                                             FilterChain chain,
                                             Authentication auth) throws IOException, ServletException {
-        LogToPDFService.logUser("User " + user.getUsername() + " has logged in");
+        LogToFileService.logUser("User " + user.getUsername() + " has logged in");
         Date date = null;
         Cookie cookie = null;
 

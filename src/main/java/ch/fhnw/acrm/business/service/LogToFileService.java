@@ -14,7 +14,7 @@ import java.util.logging.SimpleFormatter;
 
 
 @Service
-public class LogToPDFService {
+public class LogToFileService {
 
     protected static final Logger logger = Logger.getLogger("MyLog");
 
