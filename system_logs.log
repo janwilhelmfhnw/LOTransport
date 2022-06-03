@@ -1,0 +1,8 @@
+Jun 03, 2022 3:14:17 PM ch.fhnw.acrm.business.service.LogToPDFService logSystem
+WARNING: java.lang.Exception: Email address test@test already assigned another agent.
+Jun 03, 2022 3:49:37 PM ch.fhnw.acrm.business.service.LogToPDFService logSystem
+WARNING: java.lang.Exception: Email address test@test already assigned another agent.
+Jun 03, 2022 3:49:50 PM ch.fhnw.acrm.business.service.LogToPDFService logSystem
+WARNING: java.lang.Exception: Email address test@test already assigned another agent.
+Jun 03, 2022 4:25:50 PM ch.fhnw.acrm.business.service.LogToPDFService logSystem
+WARNING: java.lang.Exception: Email address test@test already assigned another agent.

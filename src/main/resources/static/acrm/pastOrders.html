@@ -33,6 +33,32 @@
         document.getElementById("main").style.marginLeft= "0";
         document.body.style.backgroundColor = "white";
     }
+    </script>
+
+    <div className="container">
+        <div className="page-header">
+            <h2 className="text-center"><strong>Order Review</strong></h2>
+        </div>
+        <div className="table-responsive">
+            <table id="orderReview" className="table table-borderless">
+                <tr>
+                    <th>Date</th>
+                    <th>Pallet Space</th>
+                    <th>Price Products</th>
+                    <th>Transport Costs</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th><a id="date"></a> </th>
+                    <th><a id="quantityProduct"></a></th>
+                    <th><a id="costProduct"></a></th>
+                    <th>Transport Costs</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
 
 </script>
 
@@ -43,4 +69,13 @@
 <script src="../assets/js/webapp.js"></script>
 <script src="../assets/js/shop.js"></script>
 </body>
+
+<script>
+    $(document).ready(function() {
+        displayPastOrders()
+    });
+
+
+
+</script>
 </html>

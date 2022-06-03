@@ -45,17 +45,43 @@ function orderButton(){
 
     }
 }
+function buyOrder(){
+    var date = new Date();
+    window.localStorage.setItem("date", date);
+}
+
 
 function displayOrder(){
     JSON.parse(window.localStorage.getItem('quantityProduct'));
     JSON.parse(window.localStorage.getItem('costProduct'));
     document.getElementById('quantityProduct').innerHTML = JSON.parse(window.localStorage.getItem('quantityProduct')) +" Palletspace";
-    document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) +" Palletspace"; +"CHF";
+    document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) + " CHF";
+}
+
+function displayPastOrders(){
+    document.getElementById('quantityProduct').innerHTML = JSON.parse(window.localStorage.getItem('quantityProduct')) +" Palletspace";
+    document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) +" CHF";
+    var date = window.localStorage.getItem("date");
+    date = new Date(date);
+    date.setDate(date.getDate());
+
+    document.getElementById('date').innerHTML = date;
 }
 
 function goBack(){
 window.localStorage.removeItem('quantityProduct');
 window.localStorage.removeItem('costProduct');
+}
+
+function displayPastOrder(){
+    document.getElementById('quantityProduct').innerHTML = JSON.parse(window.localStorage.getItem('quantityProduct')) +" Palletspace";
+    document.getElementById('costProduct').innerHTML = JSON.parse(window.localStorage.getItem('costProduct')) +" Palletspace"; +"CHF";
+}
+
+function logOut(){
+    window.localStorage.removeItem('quantityProduct');
+    window.localStorage.removeItem('costProduct');
+    window.localStorage.removeItem('date');
 }
 
  function order(){
