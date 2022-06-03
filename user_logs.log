@@ -6,3 +6,11 @@ Jun 03, 2022 2:39:38 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
 INFO: User: testhas registered an account
 Jun 03, 2022 2:40:17 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
 INFO: User test has updated his profile!
+Jun 03, 2022 4:55:56 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: qwehas registered an account
+Jun 03, 2022 4:56:08 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User git@github.com has logged in
+Jun 03, 2022 4:57:04 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User: aswfdhas registered an account
+Jun 03, 2022 4:57:12 PM ch.fhnw.acrm.business.service.LogToPDFService logUser
+INFO: User git@github.com has logged in
