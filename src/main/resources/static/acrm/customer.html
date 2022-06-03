@@ -77,7 +77,7 @@
         <label for="ShippingAddress">Your Shipping Address:</label>
         <select name="Shipping Address" id="ShippingAddress">
             <option value="default">Add Shipping Address</option>
-            <option name="address" value="Address"></option>
+            <option name="street" value="Street"></option>
         </select>
 <!--        <div class='button'>-->
 <!--            <button onclick="test()">Calculate</button>-->
@@ -106,20 +106,20 @@
 
 </script>
 
-<script>
-    $(document).ready(function () {
-        getAddress(function (result) {
-            $('option[name=address]').val(result["address"]);
-        });
-    });
-</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/script.js"></script>
 <script src="../assets/js/webapp.js"></script>
 <script src="../assets/js/shop.js"></script>
-
+<script>
+    $(document).ready(function () {
+        getAddress(function (result) {
+            $('option[name=street]').val(result["street"]);
+        });
+    });
+</script>
 </body>
 
 </html>

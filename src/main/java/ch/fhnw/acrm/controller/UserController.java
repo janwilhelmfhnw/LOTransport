@@ -70,4 +70,10 @@ public class UserController {
     public ResponseEntity<Void> init() {
         return ResponseEntity.ok().build();
     }
+
+
+    @GetMapping("/customer/address")
+    public @ResponseBody String getAddress() {
+        return agentService.getCurrentAgent().getStreet();
+    }
 }

@@ -60,7 +60,7 @@ function getAddress(callback) {
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: serviceEndpointURL + "/customer",
+        url: serviceEndpointURL + "/customer/address",
         success: function (data) {
             callback(data);
         },
