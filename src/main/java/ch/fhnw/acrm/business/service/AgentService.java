@@ -21,8 +21,8 @@ import javax.validation.Validator;
 @Validated
 public class AgentService {
 
-    @Autowired
-    private AgentRepository agentRepository;
+
+    private static AgentRepository agentRepository;
     @Autowired
     Validator validator;
     @Autowired
@@ -40,8 +40,22 @@ public class AgentService {
         agentRepository.save(agent);
     }
 
-    public Agent getCurrentAgent() {
+    public static Agent getCurrentAgent() {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return agentRepository.findByEmail(user.getUsername());
     }
+
+    // Get String
+    public static String safeToString() {
+        Agent agent1 =  getCurrentAgent();
+        if (agent1 == null) return null;
+        try {
+            return agent1.toString();
+        } catch (Throwable t) {
+            return agent1.toString();
+        }
+    }
+
+
+
 }
