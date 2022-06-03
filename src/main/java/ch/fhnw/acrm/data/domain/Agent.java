@@ -131,4 +131,16 @@ public class Agent {
 	public String getRole() {
 		return role;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Agent{" +
+				"street='" + street + '\'' +
+				", snumber='" + snumber + '\'' +
+				", postal='" + postal + '\'' +
+				", city='" + city + '\'' +
+				'}';
+	}
+
 }

@@ -2,12 +2,13 @@ package ch.fhnw.acrm.data.domain;
 
 import ch.fhnw.acrm.api.MapsAPI;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.Scanner;
-
+@Service
 public class CalculatorMap {
 
 

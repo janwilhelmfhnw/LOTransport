@@ -3,13 +3,45 @@ package ch.fhnw.acrm.data.domain;
 import java.sql.*;
 import java.util.ArrayList;
 
+import ch.fhnw.acrm.business.service.AgentService;
+import ch.fhnw.acrm.data.repository.AgentRepository;
+
+import org.springframework.stereotype.Service;
+
+@Service
 public class TestUserIntoString {
 
-    private static String address = "";
+
+
+    AgentRepository agentRepository;
+    AgentService agentService;
+    public TestUserIntoString(AgentRepository agentRepository, AgentService agentService) {
+        this.agentRepository = agentRepository;
+        this.agentService = agentService;
+        //public String a = agentRepository.toString();
+    }
+
+
+
+
+
+    void add(){
+      agentService.getLocation();
+
+    }
+
 
     public static void main(String[] args) {
-    AddressString();
+        Agent agent = new Agent();
+
+        //agent.toString();
+
+        System.out.println(agent);
+        System.out.println();
+
+
     }
+
 public static void AddressString (){
 
 
@@ -62,13 +94,13 @@ public static void AddressString (){
         }
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public static String getAddress() {
-      AddressString();
-        return address;
-
-    }
+//    public void setAddress(String address) {
+//        this.address = address;
+//    }
+//
+//    public static String getAddress() {
+//      AddressString();
+//        return address;
+//
+//    }
 }
