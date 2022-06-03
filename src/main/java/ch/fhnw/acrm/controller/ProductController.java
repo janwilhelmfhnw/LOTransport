@@ -37,7 +37,7 @@ public class ProductController {
     @RequestMapping("/product")
     public String getName(Model model){
        Agent a = agentService.getCurrentAgent();
-        model.addAttribute("name", agentRepository.findByName(String.valueOf(a)));
+        model.addAttribute(agentRepository.findByName(String.valueOf(a)));
 
         return "name";
     }
