@@ -30,7 +30,7 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", palletSize=" + palletSize +
-                ", orders=" + orders +
+
                 '}';
     }
 

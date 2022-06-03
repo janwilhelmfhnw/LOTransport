@@ -65,7 +65,7 @@ public class Orders  {
                 "id=" + id +
                 ", orderNumber=" + orderNumber +
                 ", orderAmount=" + orderAmount +
-                ", product=" + product +
+
                 '}';
     }
 

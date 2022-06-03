@@ -34,13 +34,19 @@ public class ProductController {
         this.agentService = agentService;
     }
 
-    @RequestMapping("/product")
-    public String getName(Model model){
-       Agent a = agentService.getCurrentAgent();
-        model.addAttribute(agentRepository.findByName(String.valueOf(a)));
 
-        return "name";
+    @GetMapping("/product")
+    public String getProductView(){
+        return "/user/product.html";
     }
+
+//    @RequestMapping("/product")
+//    public String getName(Model model){
+//       Agent a = agentService.getCurrentAgent();
+//        model.addAttribute(agentRepository.findByName(String.valueOf(a)));
+//
+//        return "name";
+//    }
 //
 //    @RequestMapping("/product2"){
 //        return String
