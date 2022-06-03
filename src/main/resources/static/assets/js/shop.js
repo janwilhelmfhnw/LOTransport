@@ -69,3 +69,16 @@ function getAddress(callback) {
         }
     });
 }
+function getProfile(callback) {
+    $.ajax({
+        type: "GET",
+        dataType: "json",
+        url: serviceEndpointURL + "/customer",
+        success: function (data) {
+            callback(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+        }
+    });
+}
