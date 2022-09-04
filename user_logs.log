@@ -8,3 +8,9 @@ Jun 03, 2022 11:31:18 PM ch.fhnw.acrm.business.service.LogToFileService logUser
 INFO: User: test has registered an account
 Jun 03, 2022 11:31:31 PM ch.fhnw.acrm.business.service.LogToFileService logUser
 INFO: User test@test has logged in
+Sept 03, 2022 1:32:41 PM ch.fhnw.acrm.business.service.LogToFileService logUser
+INFO: User: ydsaf has registered an account
+Sept 03, 2022 2:08:54 PM ch.fhnw.acrm.business.service.LogToFileService logUser
+INFO: User: swr has registered an account
+Sept 03, 2022 2:09:00 PM ch.fhnw.acrm.business.service.LogToFileService logUser
+INFO: User ph.gagneux@gmail.com has logged in

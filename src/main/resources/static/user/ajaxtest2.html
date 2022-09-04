@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax load test</title>
+</head>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("#test").load("data.txt");
+            });
+        });
+    </script>
+
+
+<body>
+
+
+<div id="test" >
+  <p> This is the first content! </p>
+</div>
+<!--Button must be outside div tag-->
+<button id="btn">Click to use ajax and update</button>
+
+
+</body>
+</html>
